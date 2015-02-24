@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="QMaoPetSalon.Views.Settings"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <Grid >
+            <mui:ModernTab Layout="List">
+                <mui:ModernTab.Links>
+                    <mui:Link DisplayName="品種設定" Source="/Content/PetVarietyView.xaml"/>
+                    <mui:Link DisplayName="優惠設定" Source="/Content/CouponTypeView.xaml"/>
+                    <mui:Link DisplayName="服務項目設定" Source="/Content/ServiceTypeView.xaml"/>
+
+                    <mui:Link DisplayName="疾病設定" Source="/Content/DiseaseTypeView.xaml"/>
+                    <!--                    <mui:Link DisplayName="Excel 匯入" Source="/Content/ImportExcelView.xaml"/>-->
+                </mui:ModernTab.Links>
+            </mui:ModernTab>
+        </Grid>
+    </Grid>
+</UserControl>
